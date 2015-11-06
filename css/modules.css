@@ -1,7 +1,7 @@
 /*!
  * Modulifier || Code released under the UNLICENSE
  * Code under other copyrights & licenses listed below.
- * http://modulifier.web-dev.tools/#responsive;images;list-group;embed;media-object;accessibility;print
+ * http://modulifier.web-dev.tools/#responsive;images;list-group;embed;media-object;icons;hidden;positioning;buttons;forms;accessibility;print
  */
 
 @-moz-viewport { width: device-width; scale: 1; }
@@ -108,7 +108,6 @@ svg {
   width: 100%;
 }
 
-
 .embed--1by1 {
   padding-top: 100%; /* Square */
 }
@@ -181,6 +180,338 @@ svg {
   overflow: hidden;
   min-width: 12em; /* Slightly less than 200px, responsiveness built in */
 }
+
+.icon {
+  display: inline-block;
+  position: relative;
+  background: transparent none no-repeat center center;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.i--16 {
+  height: 16px;
+  width: 16px;
+}
+
+.i--18 {
+  height: 18px;
+  width: 18px;
+}
+
+.i--24 {
+  height: 24px;
+  width: 24px;
+}
+
+.i--32 {
+  height: 32px;
+  width: 32px;
+}
+
+.i--48 {
+  height: 48px;
+  width: 48px;
+}
+
+.i--64 {
+  height: 64px;
+  width: 64px;
+}
+
+.icon svg {
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.icon-label {
+  vertical-align: middle;
+}
+
+.icon-link, .icon-link:hover {
+  text-decoration: none;
+}
+
+[hidden], .hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.visually-hidden {
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.visually-hidden.focusable:active, .visually-hidden.focusable:focus {
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  clip: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scrollable {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block, .ib {
+  display: inline-block;
+}
+
+.valign-top {
+  vertical-align: top;
+}
+
+.valign-bottom {
+  vertical-align: bottom;
+}
+
+.valign-middle {
+  vertical-align: middle;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.static {
+  position: static;
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+.zindex-2 {
+  z-index: 2;
+}
+
+.zindex-3 {
+  z-index: 3;
+}
+
+.pin-top-left, .pin-tl {
+  top: 0;
+  left: 0;
+}
+
+.pin-top-right, .pin-tr {
+  top: 0;
+  right: 0;
+}
+
+.pin-bottom-left, .pin-bl {
+  bottom: 0;
+  left: 0;
+}
+
+.pin-bottom-right, .pin-br {
+  bottom: 0;
+  right: 0;
+}
+
+.width-quarter, .w-1-4 {
+  width: 25%;
+}
+
+.width-half, .w-1-2 {
+  width: 50%;
+}
+
+.width-full, .w-1 {
+  width: 100%;
+}
+
+.link-box {
+  display: block;
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.375em 0.75em 0.42em;
+  background-color: #333;
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn--light {
+  background-color: #e2e2e2;
+  color: #000;
+}
+
+.btn--light:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+.btn--ghost {
+  background-color: transparent;
+  border: 3px solid #333;
+  color: #000;
+}
+
+.btn--ghost:hover {
+  border-color: #000;
+}
+
+label, .label-block {
+  display: block;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label,
+.label-inline {
+  display: inline-block;
+}
+
+/*!
+ * (c) Nicolas Gallagher and Jonathan Neal of Normalize.css || MIT License
+ *     https://necolas.github.io/normalize.css/
+ */
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+/*! End Normalize.css code */
 
 a:hover, a:active {
   outline: none;

@@ -14,6 +14,10 @@ html {
 	text-size-adjust:100%;
 }
 
+body {
+	padding-left: 70px;
+}
+
 h1,h2,h3,h4,h5 {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -52,11 +56,11 @@ overflow:hidden;
 
 .nav {
 	position: fixed;
-	left: -60px;
-	background-color: grey;
+	left: -52px;
+	background-color: #FF5033;
 	height: 100%;
-	transition: all 200ms linear;
-	width: 60px;
+	transition: all 200ms ease-out;
+	width: 70px;
 }
 
 .nav-check:checked ~ .nav {
@@ -70,6 +74,21 @@ overflow:hidden;
 
 .nav-check:checked ~ .nav-label {
 	background-color: grey;
+	left: 30px;
+}
+
+.nav img {
+	display: block;
+}
+
+.nav-label img {
+	display: block;
+}
+
+.nav-label {
+	position: absolute;
+	left:0px;
+	transition: all 200ms ease-out;
 }
 
 
