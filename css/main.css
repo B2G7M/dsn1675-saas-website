@@ -51,11 +51,16 @@ overflow:hidden;
 }
 
 .nav {
-	display: none;
+	position: fixed;
+	left: -60px;
+	background-color: grey;
+	height: 100%;
+	transition: all 200ms linear;
+	width: 60px;
 }
 
 .nav-check:checked ~ .nav {
-	display: block;
+	left:0;
 }
 
 .nav-check {
