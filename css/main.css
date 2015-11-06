@@ -12,8 +12,14 @@ html {
 	-ms-text-size-adjust:100%;
 	-webkit-text-size-adjust:100%;
 	text-size-adjust:100%;
+}
 
-	font-family: sans-serif;
+h1,h2,h3,h4,h5 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p {
+	font-family: 'PT Sans', sans-serif;
 }
 
 *, *::before, *::after {
@@ -42,6 +48,23 @@ a {
 
 .overflow {
 overflow:hidden;
+}
+
+.nav {
+	display: none;
+}
+
+.nav-check:checked ~ .nav {
+	display: block;
+}
+
+.nav-check {
+	position: absolute;
+	top: -3em;
+}
+
+.nav-check:checked ~ .nav-label {
+	background-color: grey;
 }
 
 
