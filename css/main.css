@@ -61,6 +61,7 @@ overflow:hidden;
 	height: 100%;
 	transition: all 200ms ease-out;
 	width: 70px;
+	z-index: 1001;
 }
 
 .nav a {
@@ -76,15 +77,15 @@ overflow:hidden;
 }
 
 .nav a:nth-child(3) {
-	transition-delay: 100ms;
-}
-
-.nav a:nth-child(4) {
 	transition-delay: 150ms;
 }
 
+.nav a:nth-child(4) {
+	transition-delay: 250ms;
+}
+
 .nav a:nth-child(5) {
-	transition-delay: 200ms;
+	transition-delay: 350ms;
 }
 
 .nav-check:checked ~ .nav a {
@@ -105,6 +106,12 @@ overflow:hidden;
 	left: 30px;
 }
 
+.nav-check:checked ~ .fade {
+	opacity: 0.5;
+	z-index: 999;
+
+}
+
 .nav img {
 	display: block;
 	width: 100%;	
@@ -118,6 +125,19 @@ overflow:hidden;
 	position: absolute;
 	left:0px;
 	transition: all 200ms ease-out;
+	z-index: 1000;
+}
+
+.fade {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0;
+	transition: opacity 200ms ease-out 25ms;
+	z-index: -1;
+	left: 0;
+
 }
 
 
