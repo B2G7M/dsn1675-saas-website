@@ -56,11 +56,39 @@ overflow:hidden;
 
 .nav {
 	position: fixed;
-	left: -52px;
+	left: -53px;
 	background-color: #FF5033;
 	height: 100%;
 	transition: all 200ms ease-out;
 	width: 70px;
+}
+
+.nav a {
+	display: block;
+	position: relative;
+	left: -50px;
+	width: 50px;
+	transition: all 200ms ease-out;
+}
+
+.nav a:nth-child(2) {
+	transition-delay: 50ms;
+}
+
+.nav a:nth-child(3) {
+	transition-delay: 100ms;
+}
+
+.nav a:nth-child(4) {
+	transition-delay: 150ms;
+}
+
+.nav a:nth-child(5) {
+	transition-delay: 200ms;
+}
+
+.nav-check:checked ~ .nav a {
+	left: 10px;
 }
 
 .nav-check:checked ~ .nav {
@@ -79,6 +107,7 @@ overflow:hidden;
 
 .nav img {
 	display: block;
+	width: 100%;	
 }
 
 .nav-label img {
