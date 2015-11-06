@@ -122,8 +122,8 @@ overflow:hidden;
 }
 
 .nav-label {
-	position: absolute;
-	left:0px;
+	position: fixed;
+	left:6px;
 	transition: all 200ms ease-out;
 	z-index: 1000;
 }
