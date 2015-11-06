@@ -1,0 +1,74 @@
+/*---------------- Website Setup -----------------*/
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+	-moz-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+	text-size-adjust:100%;
+
+	font-family: sans-serif;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+ul{
+	padding: 0;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	list-style: none;
+	color: #0074d9;
+	text-decoration: none;
+}
+
+.selected-page {
+	background-color: #0074d9;
+	color: #fff;
+}
+
+.overflow {
+overflow:hidden;
+}
+
+
+@media only screen and (min-width: 15em) { 
+
+	ul {
+		display: inline-block;
+	}
+
+	li {
+		display: inline-block;
+	}
+
+	nav {
+		text-align: center;
+	}
+
+
+}
+
+
+@media only screen and (min-width: 38em) { 
+
+
+	nav {
+		text-align: left;
+		display: inline;
+	}
+
+}
