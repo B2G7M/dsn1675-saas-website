@@ -6,6 +6,8 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
+.blur {-webkit-filter: blur(3px);}
+
 html {
 	box-sizing: border-box;
 	-moz-text-size-adjust:100%;
@@ -138,6 +140,10 @@ overflow:hidden;
 	z-index: -1;
 	left: 0;
 
+}
+
+figure:hover img {
+	filter: blur(5px);
 }
 
 
