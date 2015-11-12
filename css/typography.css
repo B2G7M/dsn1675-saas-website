@@ -170,6 +170,26 @@ small, .milli {
   margin-bottom: 0.3250rem;
 }
 
+.push-down {
+  margin-top: 1.3rem;
+}
+
+.push-down-none, .push-d-0 {
+  margin-top: 0;
+}
+
+.push-down-double, .push-d-2 {
+  margin-top: 2.6000rem;
+}
+
+.push-down-half, .push-d-1-2 {
+  margin-top: 0.6500rem;
+}
+
+.push-down-quarter, .push-d-1-4 {
+  margin-bottom: 0.3250rem;
+}
+
 .push-right-quarter, .push-r-1-4 {
   margin-right: 0.3250rem;
 }
@@ -181,6 +201,7 @@ small, .milli {
 .push-right, .push-r {
   margin-right: 1.3rem;
 }
+
 
 .pad-top, .pad-t {
   padding-top: 1.3rem;

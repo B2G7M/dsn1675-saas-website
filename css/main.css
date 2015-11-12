@@ -32,6 +32,11 @@ p {
 	box-sizing: inherit;
 }
 
+.hero {
+	position: relative;
+	width: 100%;
+}
+
 ul{
 	padding: 0;
 	text-decoration: none;
@@ -79,15 +84,15 @@ overflow:hidden;
 }
 
 .nav a:nth-child(3) {
-	transition-delay: 150ms;
+	transition-delay: 100ms;
 }
 
 .nav a:nth-child(4) {
-	transition-delay: 250ms;
+	transition-delay: 150ms;
 }
 
 .nav a:nth-child(5) {
-	transition-delay: 350ms;
+	transition-delay: 200ms;
 }
 
 .nav-check:checked ~ .nav a {

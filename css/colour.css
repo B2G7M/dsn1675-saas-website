@@ -2,6 +2,11 @@
 	background-color: grey;
 }
 
+.grey {
+	color: grey;
+	opacity: 20%;
+}
+
 .b-grey-drk {
 	background-color: #e2e2e2;
 }
@@ -12,4 +17,20 @@
 
 .b-grey-lt {
 	background-color: #efefef;
+}
+
+.text-color-orange {
+	color: #FF5033;
+}
+
+.white {
+	color: #fff;
+}
+
+.b-color-orange {
+	background-color: #FF5033;
+}
+
+.button {
+	text-decoration: none;
 }
