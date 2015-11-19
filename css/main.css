@@ -16,10 +16,6 @@ html {
 	text-size-adjust:100%;
 }
 
-body {
-	padding-left: 70px;
-}
-
 h1,h2,h3,h4,h5 {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -32,9 +28,19 @@ p {
 	box-sizing: inherit;
 }
 
-.hero {
-	position: relative;
+.hero-content {
+	position: absolute;
+	padding: 0 1rem;
 	width: 100%;
+	bottom: 15%;
+}
+
+.hero {
+	/*background: url("../images/hero.jpg)")no-repeat center top / cover;*/
+	background-color: grey;
+	padding-top: 61.8%;
+	position: relative;
+	overflow: hidden;
 }
 
 ul{
@@ -63,11 +69,11 @@ overflow:hidden;
 
 .nav {
 	position: fixed;
-	left: -53px;
+	left: -110px;
 	background-color: #FF5033;
 	height: 100%;
 	transition: all 200ms ease-out;
-	width: 70px;
+	width: 120px;
 	z-index: 1001;
 }
 
@@ -77,6 +83,14 @@ overflow:hidden;
 	left: -50px;
 	width: 50px;
 	transition: all 200ms ease-out;
+}
+
+.nav a:hover {
+	cursor: default;
+    background-color: white;
+	color: #FF5033;
+	width: 80px;
+    transition: all .2s ease-in-out 0s;
 }
 
 .nav a:nth-child(2) {
@@ -96,7 +110,7 @@ overflow:hidden;
 }
 
 .nav-check:checked ~ .nav a {
-	left: 10px;
+	left: 25px;
 }
 
 .nav-check:checked ~ .nav {
@@ -110,7 +124,7 @@ overflow:hidden;
 }
 
 .nav-check:checked ~ .nav-label {
-	left: 30px;
+	left: 90px;
 }
 
 .nav-check:checked ~ .fade {
