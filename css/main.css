@@ -16,7 +16,7 @@ html {
 	text-size-adjust:100%;
 }
 
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4,h5,a, {
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -28,11 +28,16 @@ p {
 	box-sizing: inherit;
 }
 
+.wrapper {
+	max-width: 35em;
+	margin: 0 auto;
+}
+
 .hero-content {
 	position: absolute;
-	padding: 0 1rem;
+	padding: 0 2rem;
 	width: 100%;
-	bottom: 15%;
+	bottom: 30%;
 }
 
 .hero {
@@ -41,6 +46,12 @@ p {
 	padding-top: 61.8%;
 	position: relative;
 	overflow: hidden;
+}
+
+a:hover {
+	background-color: white;
+	color: #FF5033;
+	transition: all 200ms ease-out;
 }
 
 ul{
@@ -158,38 +169,12 @@ overflow:hidden;
 	transition: opacity 200ms ease-out 25ms;
 	z-index: -1;
 	left: 0;
-
 }
 
 figure:hover img {
 	filter: blur(5px);
 }
 
-
-@media only screen and (min-width: 15em) { 
-
-	ul {
-		display: inline-block;
-	}
-
-	li {
-		display: inline-block;
-	}
-
-	nav {
-		text-align: center;
-	}
-
-
-}
-
-
-@media only screen and (min-width: 38em) { 
-
-
-	nav {
-		text-align: left;
-		display: inline;
-	}
-
+footer {
+	margin: auto;
 }

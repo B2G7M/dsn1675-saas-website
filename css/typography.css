@@ -202,6 +202,9 @@ small, .milli {
   margin-right: 1.3rem;
 }
 
+.clear-padding {
+  padding: none;
+}
 
 .pad-top, .pad-t {
   padding-top: 1.3rem;
@@ -368,6 +371,11 @@ small, .milli {
   margin-right: 1.4rem;
 }
 
+.push-both, .p-b {
+  margin-left: 1.4rem;
+  margin-right: 1.4rem;
+}
+
 .pad-top, .pad-t {
   padding-top: 1.4rem;
 }
@@ -437,7 +445,7 @@ td, th, fieldset {
   padding-right: 0.3500rem;
 }
 
-}
+
 
 @media only screen and (min-width: 60em) {
 
