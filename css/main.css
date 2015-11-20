@@ -26,6 +26,8 @@ p {
 	box-sizing: inherit;
 }
 
+
+
 .hero-content {
 	position: absolute;
 	padding: 0 2rem;
@@ -34,7 +36,7 @@ p {
 }
 
 .hero {
-	/*background: url("../images/hero.jpg)")no-repeat center top / cover;*/
+	background: url("../images/hero.jpg") no-repeat center top / cover;
 	background-color: grey;
 	padding-top: 61.8%;
 	position: relative;
