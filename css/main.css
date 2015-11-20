@@ -24,6 +24,10 @@ p {
 	font-family: 'PT Sans', sans-serif;
 }
 
+.margin-auto {
+	margin: auto;
+}
+
 *, *::before, *::after {
 	box-sizing: inherit;
 }
