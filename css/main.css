@@ -55,11 +55,11 @@ a {
 
 .nav {
 	position: fixed;
-	left: -110px;
+	left: -130px;
 	background-color: #FF5033;
 	height: 100%;
 	transition: all 200ms ease-out;
-	width: 120px;
+	width: 140px;
 	z-index: 1001;
 }
 
@@ -75,8 +75,8 @@ a {
 	cursor: default;
     background-color: white;
 	color: #FF5033;
-	width: 80px;
-    transition: all .2s ease-in-out 0s;
+	width: 100px;
+    transition: all .2s ease-in-out .2s;
 }
 
 .nav a:nth-child(2) {
@@ -110,7 +110,7 @@ a {
 }
 
 .nav-check:checked ~ .nav-label {
-	left: 90px;
+	left: 130px;
 }
 
 .nav-check:checked ~ .fade {
