@@ -26,7 +26,10 @@ p {
 	box-sizing: inherit;
 }
 
-
+.wrapper {
+	max-width: 55em;
+	margin: auto;
+}
 
 .hero-content {
 	position: absolute;
@@ -94,7 +97,7 @@ a {
 }
 
 .nav a:nth-child(5) {
-	transition-delay: 200ms;
+	transition-delay: 500ms;
 }
 
 .nav-check:checked ~ .nav a {
@@ -146,4 +149,21 @@ a {
 	transition: opacity 200ms ease-out 25ms;
 	z-index: -1;
 	left: 0;
+}
+
+.signup-banner {
+	
+	background: url("../images/hat.jpg") no-repeat center top / cover;
+	background-color: grey;
+	padding-top: 17%;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.signup-banner-content {
+	position: absolute;
+	padding: 0 2rem;
+	width: 100%;
+	bottom: 30%;
 }
