@@ -27,24 +27,30 @@
 
 <body class="grid">
 
+<ul class="skip-links">
+	<li><a href="#main" class="unit">Skip to main content</a></li>
+	<li><a href="#nav" class="unit">Skip to navigation</a></li>
+</ul>
+
 <header class="unit">
 	<input type="checkbox" class="nav-check" id="nav-check">
 	<!-- This is the button we’d click to open/close the navigation -->
 	<label class="nav-label pad-t" for="nav-check"><img src="images/toggle-button.svg" alt=""></label>
 
-	<nav class="nav text-center">
-		<a class="pad-b-1-2 pad-t-1-2 push-down bold white italic" href="index.html">HOME</a>
-		<a class="pad-b-1-2 pad-t-1-2 bold white italic" href="pricing.html">PRICING</a>
-		<a class="pad-b-1-2 pad-t-1-2 bold white italic" href="tour.html">TOUR</a>
-		<a class="pad-b-1-2 pad-t-1-2 bold white italic" href="signup.html">SIGNUP</a>
+	<nav id="nav" class="nav text-center" role="navigation">
+		<a class="current push push-down bold white italic" href="index.html">HOME</a>
+		<a class="push bold white italic" href="pricing.html">PRICING</a>
+		<a class="push bold white italic" href="tour.html">TOUR</a>
+		<a class="push bold white italic" href="signup.html">SIGNUP</a>
 	</nav>
 
 	<div class="fade"></div>
+
 </header>
 
 <!-- Main -->
-<main>
-<div class="hero unit xs-1 s-1 m-1 l-1">
+<main id="main" class="wrapper" role="main">
+<div class="hero unit xs-1 s-1 m-1 l-1" role="banner">
 	<div class="hero-content">
 		<h1 class="bold yotta push-none white">PRICING</h1>
 		<p class="mega italic white">All your task needs in one place.</p>
@@ -78,6 +84,10 @@
 	<h2 class="grey push-none">Contact</h2>
 	<a class="grey block" href="mailto:info@taskit.com?">Email: info@taskit.com</a>
 	<a class="grey" href="tel:">Phone: (613)-613-6136 </a>
+
+	<div role="contentinfo">
+		<p class="micro">Taskit 2015</p>
+	</div>
 
 </footer>
 </body>

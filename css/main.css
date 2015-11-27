@@ -31,12 +31,6 @@ p {
 	margin: auto;
 }
 
-.header-button:hover {
-	background-color: #FF5033;
-	color: #fff;
-	transition: all 340ms ease-out;
-}
-
 .hero-content {
 	position: absolute;
 	padding: 0 2rem;
@@ -50,12 +44,6 @@ p {
 	padding-top: 61.8%;
 	position: relative;
 	overflow: hidden;
-}
-
-a:hover {
-	background-color: white;
-	color: #FF5033;
-	transition: all 200ms ease-out;
 }
 
 a {
