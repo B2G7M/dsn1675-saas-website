@@ -26,6 +26,11 @@ p {
 	box-sizing: inherit;
 }
 
+.selected-page {
+	background-color: white;
+	color: #FF5033;
+}
+
 .wrapper {
 	max-width: 55em;
 	margin: auto;
@@ -65,16 +70,17 @@ a {
 .nav a {
 	display: block;
 	position: relative;
-	left: -50px;
-	width: 50px;
+	left: 0px;
+	width: 90px;
 	transition: all 200ms ease-out;
+	padding: 0.5em;
 }
 
 .nav a:hover {
 	cursor: default;
     background-color: white;
 	color: #FF5033;
-	width: 100px;
+	width: 115px;
     transition: all .2s ease-in-out .2s;
 }
 
