@@ -57,6 +57,14 @@ a {
 	text-decoration: none;
 }
 
+.contact:hover {
+	color: #FF5033;
+}
+
+.contact {
+	color: #cccccc;
+}
+
 .nav {
 	position: fixed;
 	left: -130px;

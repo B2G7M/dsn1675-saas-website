@@ -111,7 +111,7 @@
 <p class="unit xs-1 s-1 m-1 l-1 text-center bold island b-grey-lt">Select which payment method you would like to proceed with.</p>
 	
 
-	<div class="gutter unit xs-1 s-1 m-1-2 l-1-2">
+<!-- 	<div class="gutter unit xs-1 s-1 m-1-2 l-1-2">
 		<div class="media">
 			<div class="media__img">
 				<img class="" src="http://placehold.it/40x40" alt="">
@@ -131,15 +131,72 @@
 				<h3 class="milli push-1-2 pad-t-1-4">Paypal</h3>
 			</div>		
 		</div>
+	</div> -->
+
+<form>
+<div class="gutter unit xs-1 s-1 m-1 l-1">
+
+	<fieldset>
+		<legend>Card Type</legend>
+		
+		<input id="visa" type="radio" name="card">
+		<label for="visa">Visa</label>
+		
+		<input id="mastercard" type="radio" name="card">
+		<label for="mastercard">Mastercard</label>
+		
+		<input id="interact" type="radio" name="card">
+		<label for="interact">Interact</label>
+	
+	</fieldset>
+
+	<!-- <div>
+		<label for="card">Card Type</label>
+		<select id="card" required>
+			<option>Visa</option>
+			<option>Visa Debit</option>
+			<option>Mastercard</option>
+			<option>Paypal</option>
+		</select>
+	</div> -->
+
+	<div>
+		<label for="card-holder">Card Holder</label>
+		<input id="card-holder" required placeholder="first last">
 	</div>
 
-<div class="gutter unit xs-1 s-1 m-1 l-1">
-	<h3>Card Holder</h3>
-	<h3>Card Number</h3>
-	<h3>Expiry Date MM/YY</h3>
-	<h3>VC Number (back of card)</h3>
-	<a class="orange" href="confirmation.html">CONFIRM</a>
+	<div>
+		<label for="card-number">Card Number</label>
+		<input id="card-number" type"number" required placeholder="1234-1234-1234-1234">
+	</div>
+
+	<div>
+		<label for="expiry">Expiry Date MM</label>
+		<input id="expiry" type="" required placeholder="MM">
+	</div>
+
+	<div>
+		<label for="expiry">Expiry Date YY</label>
+		<input id="expiry" type="" required placeholder="YY">
+	</div>
+
+	<div>
+		<label for="vc">VC Number (back of card)</label>
+		<input id="vc" required placeholder="000">
+	</div>
+
+	<div>
+		<label for="comment">Comments</label>
+		<textarea id="comment"></textarea>
+	</div>
+
+	<a class="btn" href="confirmation.html">CONFIRM</a>
+
 </div>
+</form>
+
+
+
 </div> <!-- Background grey end -->
 <!-- End of step 2 -->
 
