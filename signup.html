@@ -133,13 +133,14 @@
 		</div>
 	</div> -->
 
-<form>
+<form action="https://formspree.io/amospetermarsters@gmail.com"
+      method="POST">
 <div class="gutter unit xs-1 s-1 m-1 l-1">
 
 	<fieldset>
 		<legend>Card Type</legend>
 		
-		<input id="visa" type="radio" name="card">
+		<input id="visa" type="radio" name="card" checked>
 		<label for="visa">Visa</label>
 		
 		<input id="mastercard" type="radio" name="card">
@@ -162,35 +163,38 @@
 
 	<div>
 		<label for="card-holder">Card Holder</label>
-		<input id="card-holder" required placeholder="first last">
+		<input id="card-holder" required placeholder="first last" name="card-holder">
 	</div>
 
 	<div>
 		<label for="card-number">Card Number</label>
-		<input id="card-number" type"number" required placeholder="1234-1234-1234-1234">
+		<input id="card-number" type"number" required placeholder="1234-1234-1234-1234" name="card-number">
 	</div>
 
 	<div>
 		<label for="expiry">Expiry Date MM</label>
-		<input id="expiry" type="" required placeholder="MM">
+		<input id="expiry" type="" required placeholder="MM" name="Month">
 	</div>
 
 	<div>
 		<label for="expiry">Expiry Date YY</label>
-		<input id="expiry" type="" required placeholder="YY">
+		<input id="expiry" type="" required placeholder="YY" name="Year">
 	</div>
 
 	<div>
 		<label for="vc">VC Number (back of card)</label>
-		<input id="vc" required placeholder="000">
+		<input id="vc" required placeholder="000" name="VC">
 	</div>
 
 	<div>
 		<label for="comment">Comments</label>
-		<textarea id="comment"></textarea>
+		<textarea id="comment" name="Comment"></textarea>
 	</div>
 
-	<a class="btn" href="confirmation.html">CONFIRM</a>
+	<div>
+		<button class="btn" type="button">Submit</button>
+	</div>
+
 
 </div>
 </form>
