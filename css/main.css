@@ -49,6 +49,34 @@ p {
 	padding-top: 61.8%;
 	position: relative;
 	overflow: hidden;
+	max-height: 60%;
+}
+
+.hero-tour {
+	background: url("../images/hero-tour.jpg") no-repeat center top / cover;
+	background-color: grey;
+	padding-top: 61.8%;
+	position: relative;
+	overflow: hidden;
+	max-height: 60%;
+}
+
+.hero-pricing {
+	background: url("../images/hero-pricing.jpg") no-repeat center top / cover;
+	background-color: grey;
+	padding-top: 61.8%;
+	position: relative;
+	overflow: hidden;
+	max-height: 60%;
+}
+
+.hero-sign {
+	background: url("../images/hero-sign.jpg") no-repeat center top / cover;
+	background-color: grey;
+	padding-top: 61.8%;
+	position: relative;
+	overflow: hidden;
+	max-height: 60%;
 }
 
 a {
@@ -63,6 +91,15 @@ a {
 
 .contact {
 	color: #cccccc;
+}
+
+.intro {
+	max-width: 28em;
+	margin: auto;
+}
+
+.bucket {
+	max-width: 20em;
 }
 
 .nav {
