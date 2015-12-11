@@ -32,9 +32,13 @@ p {
 }
 
 .wrapper {
-	max-width: 55em;
+	max-width: 42em;
 	margin: auto;
 }
+
+/*.distribute-space {
+	justify-content: space-around;
+}*/
 
 .hero-content {
 	position: absolute;
@@ -43,40 +47,27 @@ p {
 	bottom: 30%;
 }
 
-.hero {
-	background: url("../images/hero.jpg") no-repeat center top / cover;
-	background-color: grey;
-	padding-top: 61.8%;
+.hero-banner {
+	background: grey none no-repeat center center / cover;
+	min-height: 20em;
 	position: relative;
 	overflow: hidden;
-	max-height: 60%;
+}
+
+.hero {
+	background-image: url("../images/hero.jpg");
 }
 
 .hero-tour {
-	background: url("../images/hero-tour.jpg") no-repeat center top / cover;
-	background-color: grey;
-	padding-top: 61.8%;
-	position: relative;
-	overflow: hidden;
-	max-height: 60%;
+	background-image: url("../images/hero-tour.jpg");
 }
 
 .hero-pricing {
-	background: url("../images/hero-pricing.jpg") no-repeat center top / cover;
-	background-color: grey;
-	padding-top: 61.8%;
-	position: relative;
-	overflow: hidden;
-	max-height: 60%;
+	background-image: url("../images/hero-pricing.jpg");	
 }
 
 .hero-sign {
-	background: url("../images/hero-sign.jpg") no-repeat center top / cover;
-	background-color: grey;
-	padding-top: 61.8%;
-	position: relative;
-	overflow: hidden;
-	max-height: 60%;
+	background-image: url("../images/hero-sign.jpg");
 }
 
 a {
@@ -198,9 +189,9 @@ a {
 
 .signup-banner {
 	
-	background: url("../images/hat.jpg") no-repeat center top / cover;
+	background: url("../images/hat.jpg") no-repeat center center / cover;
 	background-color: grey;
-	padding-top: 17%;
+	min-height: 5em;
 	position: relative;
 	overflow: hidden;
 
