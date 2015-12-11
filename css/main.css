@@ -188,7 +188,6 @@ a {
 }
 
 .signup-banner {
-	
 	background: url("../images/hat.jpg") no-repeat center center / cover;
 	background-color: grey;
 	min-height: 5em;
@@ -202,4 +201,11 @@ a {
 	padding: 0 2rem;
 	width: 100%;
 	bottom: 30%;
+}
+
+.line-separator {
+	height:1px;
+	background:#d5d5d5;
+	border-bottom:1px solid #eaeaea;
+
 }
