@@ -27,8 +27,8 @@ p {
 }
 
 .selected-page {
-	background-color: white;
 	color: #FF5033;
+	background-color: white;
 }
 
 .wrapper {
@@ -107,16 +107,18 @@ a {
 	display: block;
 	position: relative;
 	left: 0px;
-	width: 90px;
+	width: 100px;
 	transition: all 200ms ease-out;
-	padding: 0.5em;
+	padding: 1em;
+	text-align: center;
+
 }
 
 .nav a:hover {
 	cursor: default;
     background-color: white;
 	color: #FF5033;
-	width: 115px;
+	width: 140px;
     transition: all .2s ease-in-out .2s;
 }
 
@@ -137,7 +139,7 @@ a {
 }
 
 .nav-check:checked ~ .nav a {
-	left: 25px;
+	left: 0px;
 }
 
 .nav-check:checked ~ .nav {
